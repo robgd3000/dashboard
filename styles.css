@@ -39,7 +39,7 @@
    
   body {
     font: 16px "Lato", sans-serif;
-  }
+  } 
 
 
 
@@ -47,7 +47,7 @@
 
 
 /* style */
-
+/* 
 header {
   background-color: aqua;
   display: flex;
@@ -91,7 +91,7 @@ nav a {
 
 /* images */
 
-.profile-pic img {
+/* .profile-pic img {
     height: 80px;
     width: auto;
     border-radius: 50%;
@@ -103,63 +103,80 @@ footer img {
     height: 100px;
     width: auto;
     border-radius: 50%;
-}
+}  */
 
   /* grid */
 
-/* .container {
+.container {
   display: grid;
-    grid-template-areas:  "aside header header header header"
-                          "adide about about about about"
-                          "aside moon time weather weather" 
-                          "aside events events projects projects"
-                          "aside soundcloud soundcloud guitar-songs guitar-songs"
-                          "aside footer footer footer footer";
-                          grid-template-columns: 600px 400px 400px 400px 400px;
-                          grid-template-rows: 600px 600px 600px 600px 600px 600px;
-} */
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 300px);
+  border: solid black;
+}
 
 
 header {
-    grid-area: header;
+  background-color: aliceblue;
+  grid-row: 1 / 2;
+  grid-column: 2 / 6;  
 }
 
 aside {
-    grid-area: aside;
+  background-color: aqua;
+  grid-row: 1 / 5;  
+  grid-column: 1 / 2;
 }
 
 .about {
-    grid-area: about;
+  background-color: #deb887;  
+  grid-row: 2 / 3;
+  grid-column: 2 / 6;
 }
 
 .moon {
-    grid-area: moon;
+  background-color: darkorange; 
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
 }
 
 .time {
-    grid-area: time;
+  background-color: deeppink;
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
 }
 
 .weather {
-    grid-area: weather;
+  background-color: blue;  
+  grid-row: 3 / 4;
+  grid-column: 4 / 6;
 }
 
 .events {
-    grid-area: events;
+  background-color: gold; 
+  grid-row: 4 / 5;
+  grid-column: 2 / 4;
 }
 
 .projects {
-    grid-area: projects;
+  background-color: mediumspringgreen;  
+  grid-row: 4 / 5;
+  grid-column: 4 / 6;
 }
 
 .soundcloud {
-    grid-area: soundcloud;
+  background-color: dodgerblue;  
+  grid-row: 5 / 6;
+  grid-column: 2 / 4;
 }
 
 .guitar-songs {
-    grid-area: guitar-songs;
+  background-color: chartreuse;
+  grid-row: 5 / 6;
+  grid-column: 4 / 6;  
 }
 
-.footer {
-    grid-area: footer;
+footer {
+  background-color: black; 
+  grid-row: 5 / 6; 
+  grid-column: 1 / 2;
 }
