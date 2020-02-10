@@ -4,43 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
 </head>
 <body>
-    <header>
-        <h1>Hello Robert!</h1>
-        <div class="profile-pic">
+    <div class="container">
+        <header>
+            <div class="name">
+                <h1>Hello Robert!</h1>
+            </div>
+            <div class="profile-pic">
+                <h2>Robert Davis</h2>
+                <img src="./images/me-spain.png" alt="profile pic">
+            </div>
+        </header>
+        <aside>
             <h2>Robert Davis</h2>
-            <img src="./images/me-spain.png" alt="profile pic">
-        </div>
-    </header>
-    <aside>
-        <h2>Robert Davis</h2>
-        <nav>
-            <a href="#">Overview</a>
-            <a href="#">Calendar</a>
-            <a href="#">Projects</a>
-            <a href="#">My Profile</a>
-        </nav>
+            <nav>
+                <a href="#">Overview</a>
+                <a href="https://calendar.google.com/calendar/r">Calendar</a>
+                <a href="https://github.com/robgd3000?tab=repositories">Projects</a>
+                <a href="https://www.linkedin.com/in/robert-davis-90048ba5/">My Profile</a>
+            </nav>
 
-    </aside>
-    <div class="about">
-        <h2>Welcome!</h2>
-        <p>Using this dashboard to stay organized. It includes my web programming projects, Soundcloud Playlist, and the songs that I'm currently learing on guitar.</p>
-    </div>
-    <div class="moon">
+        </aside>
+        <div class="about">
+            <h2>Welcome!</h2>
+                <p>Using this dashboard to stay organized. It includes my web programming projects, Soundcloud Playlist, and the songs that I'm currently learing on guitar.</p>
+        </div>
+        <div class="moon">
         <iframe allowtransparency="yes" scrolling="no" style="border: 1px solid #888; width:190px; height:283px; overflow: hidden;" src="https://in-the-sky.org/widgets/moonphase.php?skin=0"></iframe>
-    </div>
-    <div class="time">
+        </div>
+        <div class="time">
         <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:150px;height:150px;"src="https://www.clocklink.com/html5embed.php?clock=041&timezone=CST&color=green&size=150&Title=&Message=&Target=&From=2020,1,1,0,0,0&Color=green"></iframe>
-    </div>
-    <div class="weather">
+        </div>
+        <div class="weather">
         <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="NEW YORK" data-label_2="WEATHER" data-theme="original" >NEW YORK WEATHER</a>
             <script>
                 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
             </script>
-    </div>
-    <div class="events">
+        </div>
+        <div class="events">
         <table>
             <th>
                 <div class="table-head">
@@ -84,8 +88,8 @@
                 <td>!</td>
             </tr>
         </table>
-    </div>
-    <div class="projects">
+        </div>
+        <div class="projects">
         <table>
             <th>
                 <div class="table-head">
@@ -112,11 +116,11 @@
                 <td>Complete</td>  
               </tr>
         </table>
-    </div>
-    <div class="soundcloud">
+        </div>
+        <div class="soundcloud">
         <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/239726522&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-    </div>
-    <div class="guitar-songs">
+        </div>
+        <div class="guitar-songs">
         <table>
             <th>
                 <h2>Guitar Songs</h2>
@@ -146,12 +150,13 @@
                 </td>
             </tr>
         </table>
-    </div>
-    <footer>
+        </div>
+        <footer>
         <img src="./images/me-spain.png" alt="profile pic">
             <h3>Robert Davis</h3>
             <h3>robert.davisiii@tech901.org</h3>
             <h3>901.490.8214</h3>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

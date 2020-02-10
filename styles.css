@@ -1,0 +1,165 @@
+/* reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+   
+  ul {
+    list-style: none;
+  }
+   
+  a,
+  button {
+    color: inherit;
+  }
+   
+  a {
+    text-decoration: none;
+  }
+   
+  button {
+    background: none;
+    cursor: pointer;
+  }
+   
+  input {
+    -webkit-appearance: none;
+  }
+   
+  button,
+  input {
+    border: none;
+  }
+   
+  svg {
+    display: block;
+  }
+   
+  body {
+    font: 16px "Lato", sans-serif;
+  }
+
+
+
+
+
+
+/* style */
+
+header {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+}
+.name {
+  background-color: crimson;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-top: 20px;
+  vertical-align: middle;
+}
+.profile-pic {
+  background-color: blueviolet;
+  width: 280px;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.profile-pic h2 {
+  display: inline-block;
+  padding-top: 20px;
+  border: solid black;
+}
+
+aside {
+  background-color: darkgreen;
+  width: auto;
+}
+nav a {
+  display: block;
+  padding: 2rem 0rem;
+}
+
+.about {
+  background-color: darkorange;
+}
+
+/* images */
+
+.profile-pic img {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+    display: inline-block;
+    padding: .5rem;
+}
+
+footer img {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+}
+
+  /* grid */
+
+/* .container {
+  display: grid;
+    grid-template-areas:  "aside header header header header"
+                          "adide about about about about"
+                          "aside moon time weather weather" 
+                          "aside events events projects projects"
+                          "aside soundcloud soundcloud guitar-songs guitar-songs"
+                          "aside footer footer footer footer";
+                          grid-template-columns: 600px 400px 400px 400px 400px;
+                          grid-template-rows: 600px 600px 600px 600px 600px 600px;
+} */
+
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
+}
+
+.about {
+    grid-area: about;
+}
+
+.moon {
+    grid-area: moon;
+}
+
+.time {
+    grid-area: time;
+}
+
+.weather {
+    grid-area: weather;
+}
+
+.events {
+    grid-area: events;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.soundcloud {
+    grid-area: soundcloud;
+}
+
+.guitar-songs {
+    grid-area: guitar-songs;
+}
+
+.footer {
+    grid-area: footer;
+}
