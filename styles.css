@@ -44,15 +44,26 @@
 
 
 
+  /* grid */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 90px 180px  200px repeat(2, 400px) 120px;
+  border: solid black;
+}
+
 
 
 /* style */
-/* 
+
 header {
-  background-color: aqua;
+  background-color: aliceblue;
+  grid-row: 1 / 2;
+  grid-column: 2 / 6;
   display: flex;
   justify-content: space-between;
-  height: 5rem;
+  height: 5rem;  
 }
 .name {
   background-color: crimson;
@@ -76,91 +87,86 @@ header {
   border: solid black;
 }
 
-aside {
-  background-color: darkgreen;
-  width: auto;
-}
-nav a {
-  display: block;
-  padding: 2rem 0rem;
-}
 
-.about {
-  background-color: darkorange;
-}
+/* aside */
 
-/* images */
-
-/* .profile-pic img {
-    height: 80px;
-    width: auto;
-    border-radius: 50%;
-    display: inline-block;
-    padding: .5rem;
-}
-
-footer img {
-    height: 100px;
-    width: auto;
-    border-radius: 50%;
-}  */
-
-  /* grid */
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 300px);
-  border: solid black;
-}
-
-
-header {
-  background-color: aliceblue;
-  grid-row: 1 / 2;
-  grid-column: 2 / 6;  
-}
 
 aside {
   background-color: aqua;
   grid-row: 1 / 5;  
   grid-column: 1 / 2;
 }
+aside h2 {
+  padding: 20px .5rem 5rem .5rem;
+}
+nav a {
+  display: block;
+  padding: 3rem .5rem;
+}
+
 
 .about {
-  background-color: #deb887;  
+  background-color: #1E2D44;  
   grid-row: 2 / 3;
   grid-column: 2 / 6;
 }
+.welcome {
+  background-color: whitesmoke;
+  margin: 1rem;
+  padding: 1.5rem;
+  height: 150px;
+  width: 1000px;
+  border-radius: 15%;
+}
+.welcome h2 {
+  margin: .5rem;
+
+}
+.welcome p {
+  margin: .5rem;
+}
 
 .moon {
-  background-color: darkorange; 
+  background-color: #1E2D44; 
   grid-row: 3 / 4;
   grid-column: 2 / 3;
+  padding-top: 1rem;
 }
 
 .time {
-  background-color: deeppink;
+  background-color: #1E2D44;
   grid-row: 3 / 4;
-  grid-column: 3 / 4;
+  grid-column: 5 / 6;
+  text-align: center;
+  padding: 2rem 2rem;
+}
+.quote {
+  background-color: #1E2D44;
+  grid-row: 3 / 4;
+  grid-column: 3 / 5;
+  text-align: center;
+  padding-top: 1rem; 
 }
 
 .weather {
   background-color: blue;  
-  grid-row: 3 / 4;
-  grid-column: 4 / 6;
+  grid-row: 6 / 7;
+  grid-column: 2 / 6;
+  padding-top: 1rem;
 }
 
 .events {
   background-color: gold; 
   grid-row: 4 / 5;
   grid-column: 2 / 4;
+  text-align: center;
 }
 
 .projects {
   background-color: mediumspringgreen;  
   grid-row: 4 / 5;
   grid-column: 4 / 6;
+  text-align: center;
 }
 
 .soundcloud {
@@ -173,10 +179,37 @@ aside {
   background-color: chartreuse;
   grid-row: 5 / 6;
   grid-column: 4 / 6;  
+  text-align: center;
 }
 
 footer {
-  background-color: black; 
-  grid-row: 5 / 6; 
+  grid-row: 5 / 7; 
   grid-column: 1 / 2;
+  text-align: center;
+  padding-top: 6rem;
+}
+
+
+/* table */
+
+
+table {
+  height: 250px;
+  width: 500px;
+}
+
+/* images */
+
+.profile-pic img {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+    display: inline-block;
+    padding: .5rem;
+}
+
+footer img {
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
 }

@@ -29,20 +29,20 @@
 
         </aside>
         <div class="about">
-            <h2>Welcome!</h2>
+            <div class="welcome">
+                <h2>Welcome!</h2>
                 <p>Using this dashboard to stay organized. It includes my web programming projects, Soundcloud Playlist, and the songs that I'm currently learing on guitar.</p>
+            </div>
         </div>
         <div class="moon">
-        <iframe allowtransparency="yes" scrolling="no" style="border: 1px solid #888; width:190px; height:283px; overflow: hidden;" src="https://in-the-sky.org/widgets/moonphase.php?skin=0"></iframe>
+            <script type="text/javascript" src="http://moonphases.co.uk/js/widget.js" id="moonphase_widget" widget="small" lat="" lng="" date="" tz=""></script>
+
         </div>
         <div class="time">
-        <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:150px;height:150px;"src="https://www.clocklink.com/html5embed.php?clock=041&timezone=CST&color=green&size=150&Title=&Message=&Target=&From=2020,1,1,0,0,0&Color=green"></iframe>
+            <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:300px;height:75px;"src="https://www.clocklink.com/html5embed.php?clock=038&timezone=CST&color=black&size=300&Title=&Message=&Target=&From=2020,1,1,0,0,0&Color=black"></iframe>
         </div>
-        <div class="weather">
-        <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="NEW YORK" data-label_2="WEATHER" data-theme="original" >NEW YORK WEATHER</a>
-            <script>
-                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-            </script>
+        <div class="quote">
+            <a href="https://kwize.com/quote-of-the-day/"><img style="width:350px;" src="https://kwize.com/pics/Quote-of-the-Day-1-0.jpg" alt="Quote of the Day"></a>
         </div>
         <div class="events">
         <table>
@@ -51,17 +51,20 @@
                     <h2>Calendar</h2>
                     <h3>Today, February 12, 2020</h3>
                 </div>
+            <th></th>
+            <th>
                 <div class="view">
-                    View More
+                    <a href="https://calendar.google.com/calendar/r">View More</a>
                 </div>
             </th>
+            </th>
             <tr>
-                <td>8:50am</td>
+                <td class="left">8:50am</td>
                 <td>Work - Bowie Center</td>
                 <td></td>
             </tr>
             <tr>
-                <td>5:30pm</td>
+                <td class="left">5:30pm</td>
                 <td>Class - Tech901</td>
                 <td>
                     <div class="new">
@@ -72,7 +75,7 @@
                 </td>
             </tr>
             <tr>
-                <td>9:30pm</td>
+                <td class="left">9:30pm</td>
                 <td>Study - Coding</td>
                 <td>
                     <div class="new">
@@ -85,7 +88,7 @@
             <tr>
                 <td>All Day</td>
                 <td>Pay MLGW</td>
-                <td>!</td>
+                <td class="right">!</td>
             </tr>
         </table>
         </div>
@@ -95,30 +98,32 @@
                 <div class="table-head">
                     <h2>Projects</h2>
                 </div>
+            </th>
+            <th>
                 <div class="view">
-                    View More
+                    <a href="https://github.com/robgd3000?tab=repositories">View More</a>
                 </div>
             </th>
             <tr>
-              <td>Amilie's Bakery</td>
-              <td>In Progress</td>  
+              <td class="left">Amilie's Bakery</td>
+              <td class="right">In Progress</td>  
             </tr>
             <tr>
-                <td>Tea Time</td>
-                <td>In Progress</td>  
+                <td class="left">Tea Time</td>
+                <td class="right">In Progress</td>  
               </tr>
               <tr>
-                <td>Working With Tables</td>
-                <td>Complete</td>  
+                <td class="left">Working With Tables</td>
+                <td class="right">Complete</td>  
               </tr>
               <tr>
-                <td>Walking In Memphis</td>
-                <td>Complete</td>  
+                <td class="left">Walking In Memphis</td>
+                <td class="right">Complete</td>  
               </tr>
         </table>
         </div>
         <div class="soundcloud">
-        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/239726522&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <iframe width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/239726522&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
         </div>
         <div class="guitar-songs">
         <table>
@@ -126,31 +131,37 @@
                 <h2>Guitar Songs</h2>
             </th>
             <tr>
-                <td>I Wanna Love You</td>
-                <td>
+                <td class="left">I Wanna Love You</td>
+                <td class="right">
                     <a href="https://tabs.ultimate-guitar.com/tab/bob-marley/is-this-love-tabs-324052">TAB</a>
                 </td>
             </tr>
             <tr>
-                <td>Parecen Viernes</td>
-                <td>
+                <td class="left">Parecen Viernes</td>
+                <td class="right">
                     <a href="https://tabs.ultimate-guitar.com/tab/marc-anthony/parecen-viernes-chords-2856875">TAB</a>
                 </td>
             </tr>
             <tr>
-                <td>Moonchild</td>
-                <td>
+                <td class="left">Moonchild</td>
+                <td class="right">
                     <a href="https://tabs.ultimate-guitar.com/tab/king-crimson/moonchild-tabs-1408725">TAB</a>
                 </td>
             </tr>
             <tr>
-                <td>La Bicicleta</td>
-                <td>
+                <td class="left">La Bicicleta</td>
+                <td class="right">
                     <a href="https://tabs.ultimate-guitar.com/tab/carlos-vives/la-bicicleta-chords-1851525">TAB</a>
                 </td>
             </tr>
         </table>
         </div>
+        <div class="weather">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="NEW YORK" data-label_2="WEATHER" data-theme="original" >NEW YORK WEATHER</a>
+                <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+                </script>
+            </div>
         <footer>
         <img src="./images/me-spain.png" alt="profile pic">
             <h3>Robert Davis</h3>
