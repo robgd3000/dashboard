@@ -39,6 +39,7 @@
    
   body {
     font: 16px "Lato", sans-serif;
+    background-color: #A2B1C1;
   } 
 
 
@@ -48,8 +49,8 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 90px 180px  200px repeat(2, 400px) 120px;
+  grid-template-columns: 250px repeat(4, 1fr);
+  grid-template-rows: 90px 180px repeat(2, 400px) 200px 120px;
   border: solid black;
 }
 
@@ -57,26 +58,28 @@
 
 /* style */
 
+
+
+/* header */
+
 header {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   grid-row: 1 / 2;
   grid-column: 2 / 6;
   display: flex;
   justify-content: space-between;
-  height: 5rem;  
+  height: 5.5rem;  
 }
 .name {
-  background-color: crimson;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  margin-top: 20px;
+  margin: 1.5rem 1rem;
   vertical-align: middle;
 }
 .profile-pic {
-  background-color: blueviolet;
-  width: 280px;
+  width: 500px;
   padding: 0px;
-  margin: 0px;
+  margin: .5rem 0rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -84,7 +87,8 @@ header {
 .profile-pic h2 {
   display: inline-block;
   padding-top: 20px;
-  border: solid black;
+  margin: 0rem 1rem;
+  /* border: solid black; */
 }
 
 
@@ -92,30 +96,32 @@ header {
 
 
 aside {
-  background-color: aqua;
+  background-color: whitesmoke;
   grid-row: 1 / 5;  
   grid-column: 1 / 2;
 }
 aside h2 {
-  padding: 20px .5rem 5rem .5rem;
+  margin: 2rem;
 }
 nav a {
-  display: block;
+  display: inline;
   padding: 3rem .5rem;
+}
+.nav-icon {
+  margin: 5rem 1rem;
 }
 
 
 .about {
-  background-color: #1E2D44;  
   grid-row: 2 / 3;
-  grid-column: 2 / 6;
+  grid-column: 2 / 5;
 }
 .welcome {
   background-color: whitesmoke;
   margin: 1rem;
   padding: 1.5rem;
   height: 150px;
-  width: 1000px;
+  width: 850px;
   border-radius: 15%;
 }
 .welcome h2 {
@@ -125,64 +131,76 @@ nav a {
 .welcome p {
   margin: .5rem;
 }
-
-.moon {
-  background-color: #1E2D44; 
-  grid-row: 3 / 4;
-  grid-column: 2 / 3;
-  padding-top: 1rem;
-}
-
 .time {
-  background-color: #1E2D44;
-  grid-row: 3 / 4;
+  grid-row: 2 / 3;
   grid-column: 5 / 6;
   text-align: center;
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
+}
+
+.moon { 
+  grid-row: 5 / 6;
+  grid-column: 4 / 5;
+  padding-top: 1rem;
 }
 .quote {
-  background-color: #1E2D44;
-  grid-row: 3 / 4;
-  grid-column: 3 / 5;
+  grid-row: 5 / 6;
+  grid-column: 5 / 6;
   text-align: center;
   padding-top: 1rem; 
 }
 
 .weather {
-  background-color: blue;  
+    
   grid-row: 6 / 7;
   grid-column: 2 / 6;
   padding-top: 1rem;
 }
 
 .events {
-  background-color: gold; 
-  grid-row: 4 / 5;
+  background-color: white; 
+  grid-row: 3 / 4;
   grid-column: 2 / 4;
   text-align: center;
+  padding: 1rem;
+  margin: .5rem;
+  border-radius: 20%;
 }
 
 .projects {
-  background-color: mediumspringgreen;  
-  grid-row: 4 / 5;
+  background-color: white;  
+  grid-row: 3 / 4;
   grid-column: 4 / 6;
   text-align: center;
+  padding: 1rem;
+  margin: .5rem;
+  border-radius: 20%;
 }
 
 .soundcloud {
-  background-color: dodgerblue;  
-  grid-row: 5 / 6;
+  grid-row: 4 / 5;
   grid-column: 2 / 4;
+  text-align: center;
+  padding-top: 1rem;
+}
+.soundcloud iframe {
+  width: 500px;
+  border-radius: 10%;
 }
 
 .guitar-songs {
-  background-color: chartreuse;
-  grid-row: 5 / 6;
+  background-color: white;
+  grid-row: 4 / 5;
   grid-column: 4 / 6;  
   text-align: center;
+  padding: 1rem;
+  margin: .5rem;
+  border-radius: 20%;
 }
 
+
 footer {
+  background-color: gainsboro;
   grid-row: 5 / 7; 
   grid-column: 1 / 2;
   text-align: center;
@@ -194,8 +212,47 @@ footer {
 
 
 table {
-  height: 250px;
-  width: 500px;
+  height: 350px;
+  width: 550px;
+
+}
+td {
+  width: rem;
+  height: 4rem;
+}
+tr {
+  width: 5rem;
+  border: solid black;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.new {
+  text-align: right;
+}
+.table-head {
+  text-align: left;
+}
+.table-head h2 {
+  margin-bottom: .3rem;
+}
+.new {
+  background-color: green;
+  width: 3.5rem;
+  text-align: center;
+  border-radius: 45%;
+  margin-left: 1.5rem;
+}
+.now {
+  background-color: red;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  padding: .6rem;
+  margin-left: 2rem;
 }
 
 /* images */
@@ -212,4 +269,11 @@ footer img {
     height: 100px;
     width: auto;
     border-radius: 50%;
+}
+.nav-icon img {
+  height: 1.5rem;
+}
+.nav-icon-head img {
+  height: 65px;
+  margin: 0rem .5rem;
 }
