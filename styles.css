@@ -52,8 +52,8 @@
 
 .container {
   display: grid;
-  grid-template-columns: 250px repeat(4, 1fr);
-  grid-template-rows: 90px 180px repeat(2, 400px) 200px 120px;
+  grid-template-columns: 240px repeat(4, fr);
+  grid-template-rows: 90px 180 repeat(2, 400px) 200px 120px;
   border: solid black;
 }
 
@@ -105,14 +105,14 @@ aside {
   grid-column: 1 / 2;
 }
 aside h2 {
-  margin: 2rem;
+  margin: 2.5rem;
 }
 nav a {
   display: inline;
   padding: 3rem .5rem;
 }
 .nav-icon {
-  margin: 5rem 1rem;
+  margin: 5rem 2rem;
 }
 
 
@@ -122,10 +122,11 @@ nav a {
 }
 .welcome {
   background-color: whitesmoke;
+  opacity: .7;
   margin: 1rem;
   padding: 1.5rem;
   height: 150px;
-  width: 850px;
+  width: 100%;
   border-radius: 15%;
 }
 .welcome h2 {
@@ -167,9 +168,10 @@ nav a {
   grid-row: 3 / 4;
   grid-column: 2 / 4;
   text-align: center;
-  padding: 1rem;
-  margin: .5rem;
+  padding: 1rem 3rem;
+  margin: .5rem 0rem .5rem 2rem;
   border-radius: 20%;
+  overflow: 
 }
 
 .projects {
@@ -178,9 +180,10 @@ nav a {
   grid-row: 3 / 4;
   grid-column: 4 / 6;
   text-align: center;
-  padding: 1rem;
-  margin: .5rem;
+  padding: 1rem 3rem;
+  margin: 0rem 6rem .5rem 4rem;
   border-radius: 20%;
+  overflow: ;
 }
 
 .soundcloud {
@@ -188,9 +191,10 @@ nav a {
   grid-column: 2 / 4;
   text-align: center;
   padding-top: 1rem;
+  margin-left: 1rem
 }
 .soundcloud iframe {
-  width: 500px;
+  max-width: 500px;
   border-radius: 10%;
   opacity: .7;
 }
@@ -201,8 +205,8 @@ nav a {
   grid-row: 4 / 5;
   grid-column: 4 / 6;  
   text-align: center;
-  padding: 1rem;
-  margin: .5rem;
+  padding: 1rem 3rem;
+  margin: .5rem 6rem .5rem 4rem;
   border-radius: 20%;
 }
 
@@ -221,15 +225,17 @@ footer {
 
 table {
   height: 350px;
-  width: 550px;
-
+  width: 100%;
+  border: solid black;
 }
+
 td {
-  width: rem;
+  width: auto;
   height: 4rem;
+  border: solid black;
 }
 tr {
-  width: 5rem;
+  width: auto;
   border: solid black;
 }
 .left {
