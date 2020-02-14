@@ -91,8 +91,18 @@ header {
   display: inline-block;
   padding-top: 20px;
   margin: 0rem 1rem;
-  /* border: solid black; */
+  color: white;
+  opacity: .7;
 }
+.nav-icon-head img:hover {
+  transform: scale(1.4);
+}
+h1 {
+  color: white;
+  opacity: .7;
+}
+
+
 
 
 /* aside */
@@ -110,6 +120,9 @@ aside h2 {
 nav a {
   display: inline;
   padding: 3rem .5rem;
+} 
+.nav-icon a:hover {
+  color: green;
 }
 .nav-icon {
   margin: 5rem 2rem;
@@ -179,6 +192,7 @@ nav a {
   border-radius: 20%;
 }
 
+
 .projects {
   background-color: white;  
   opacity: .7;
@@ -188,7 +202,6 @@ nav a {
   padding: 1rem 3rem;
   margin: 0rem 6rem .5rem 4rem;
   border-radius: 20%;
-  overflow: ;
 }
 
 .soundcloud {
@@ -196,7 +209,7 @@ nav a {
   grid-column: 2 / 4;
   text-align: center;
   padding-top: 1rem;
-  margin-left: 1rem
+  margin-left: 1rem;
 }
 .soundcloud iframe {
   max-width: 500px;
@@ -231,17 +244,17 @@ footer {
 table {
   height: 350px;
   width: 100%;
-  border: solid black;
+  
 }
 
 td {
   width: auto;
   height: 4rem;
-  border: solid black;
+  
 }
 tr {
   width: auto;
-  border: solid black;
+  
 }
 .left {
   text-align: left;
@@ -272,6 +285,9 @@ tr {
   border-radius: 50%;
   padding: .6rem;
   margin-left: 2rem;
+}
+table a:hover {
+  color: green;
 }
 
 /* images */
@@ -333,9 +349,6 @@ footer img {
     margin: 1.5rem 1rem;
     vertical-align: middle;
     display: none;
-  }
-  .name h1 {
-    /* display: none; */
   }
   .profile-pic {
     width: 500px;
@@ -409,7 +422,6 @@ nav a {
   padding: 1rem 3rem;
   margin: .5rem 0rem .5rem 2rem;
   border-radius: 20%;
-  overflow: 
 }
 
 .projects {
@@ -421,7 +433,6 @@ nav a {
   padding: 1rem 3rem;
   margin: 0rem 2rem .5rem 2rem;
   border-radius: 20%;
-  overflow: ;
 }
 .soundcloud {
   grid-row: 4 / 5;
@@ -518,7 +529,6 @@ nav a {
     padding: 1rem 3rem;
     margin: 1rem;
     border-radius: 20%;
-    overflow: 
   }
   
   .projects {
@@ -530,7 +540,6 @@ nav a {
     padding: 1rem 3rem;
     margin: 1rem;
     border-radius: 20%;
-    overflow: ;
   }
 
   .guitar-songs {
